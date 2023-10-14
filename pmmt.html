@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PROJECT MANAGEMENT TOOL</title>
+    <link rel="stylesheet" href="pmmt.css">
+</head>
+<body>
+    <header>
+        <h1>PROJECT MANAGEMENT TOOL</h1>
+    </header>
+
+    <div class="container">
+        <div class="task-list">
+            <h2>TASK LIST</h2>
+            <ul id="task-list">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+        </div>
+
+        <div class="user-list">
+            <h2>USER LIST</h2>
+            <ul id="user-list">
+                <!-- Users will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="add-task">
+        <h2>Add Task</h2>
+        <input type="text" id="task-name" placeholder="Task name">
+        <select id="assignee">
+            <!-- Users will be dynamically added here -->
+        </select>
+        <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <script src="pmmt.js"></script>
+</body>
+</html>
